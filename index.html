@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">Portfolio<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="tag">Hello, I'm</p>
+      <h1>Your Name</h1>
+      <h2>DevOps &amp; Cloud Engineer | Developer</h2>
+      <p class="bio">
+        Building automated CI/CD pipelines, containerized applications, and scalable cloud infrastructure.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      I am a passionate technologist focused on Linux administration, container orchestration, and modern web development. I enjoy automating workflows, solving infrastructure bottlenecks, and building reliable end-to-end systems.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Linux &amp; Bash</div>
+      <div class="skill-card">Docker &amp; Compose</div>
+      <div class="skill-card">Kubernetes</div>
+      <div class="skill-card">Git &amp; GitHub Actions</div>
+      <div class="skill-card">HTML / CSS / JS</div>
+      <div class="skill-card">Networking &amp; Cloud</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>3-Tier Containerized App</h3>
+        <p>Full-stack React, Node.js, and MySQL application orchestrated with Docker and Kubernetes.</p>
+        <div class="project-links">
+          <a href="https://github.com/" target="_blank">GitHub Repo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Automated CI/CD Pipeline</h3>
+        <p>End-to-end build, test, and Docker Hub image push workflow built with GitHub Actions.</p>
+        <div class="project-links">
+          <a href="https://github.com/" target="_blank">GitHub Repo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Static Portfolio Website</h3>
+        <p>Fast, responsive personal portfolio hosted directly on GitHub Pages.</p>
+        <div class="project-links">
+          <a href="https://github.com/" target="_blank">GitHub Repo &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p>Feel free to reach out for collaborations, freelance work, or technical discussions.</p>
+    <div class="contact-links">
+      <a href="mailto:youremail@example.com" class="btn primary">Email Me</a>
+      <a href="https://github.com/" target="_blank" class="btn secondary">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
