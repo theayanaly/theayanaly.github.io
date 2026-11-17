@@ -1,0 +1,4 @@
+document.getElementById('year').textContent = new Date().getFullYear();
+const menu = document.getElementById('menuToggle'),
+    links = document.getElementById('navLinks');
+menu.addEventListener('click', () => { const open = links.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)) }); links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { links.classList.remove('open'); menu.setAttribute('aria-expanded', 'false') })); const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target) } }), { threshold: .12 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));

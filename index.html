@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./script.js" defer>
     <style>
         
     </style>
@@ -119,7 +120,8 @@
     </main>
     <footer><span>© <span id="year"></span> AYAN ALI</span><span>DESIGNED FOR RELIABILITY · BUILT WITH INTENTION</span>
     </footer>
-    <script>document.getElementById('year').textContent = new Date().getFullYear(); const menu = document.getElementById('menuToggle'), links = document.getElementById('navLinks'); menu.addEventListener('click', () => { const open = links.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)) }); links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { links.classList.remove('open'); menu.setAttribute('aria-expanded', 'false') })); const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target) } }), { threshold: .12 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
+    <script>
+   </script>
 </body>
 
 </html>
