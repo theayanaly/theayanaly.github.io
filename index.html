@@ -1,106 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0d10">
+    <meta name="description" content="Ayan Ali — DevOps and Cloud Engineer building resilient infrastructure.">
+    <title>Ayan Ali — Cloud & DevOps Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
 </head>
+
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <a href="#home" class="logo">Portfolio<span>.</span></a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="menu-toggle" id="menuToggle">&#9776;</button>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <p class="tag">Hi this is Me</p>
-      <h1>Ayan Ali</h1>
-      <h2>DevOps &amp; Cloud Engineer | Developer</h2>
-      <p class="bio">
-        Building automated CI/CD pipelines, containerized applications, and scalable cloud infrastructure.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
-    <p class="about-text">
-      I am a passionate technologist focused on Linux administration, container orchestration. I enjoy automating workflows, solving infrastructure bottlenecks, and building reliable end-to-end systems.
-    </p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">Linux &amp; Bash</div>
-      <div class="skill-card">Docker &amp; Compose</div>
-      <div class="skill-card">Kubernetes</div>
-      <div class="skill-card">Git &amp; GitHub Actions</div>
-      <div class="skill-card">Networking &amp; Cloud</div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>3-Tier Containerized App</h3>
-        <p>Full-stack React, Node.js, and MySQL application orchestrated with Docker and Kubernetes.</p>
-        <div class="project-links">
-          <a href="https://github.com/" target="_blank">GitHub Repo &rarr;</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Automated CI/CD Pipeline</h3>
-        <p>End-to-end build, test, and Docker Hub image push workflow built with GitHub Actions.</p>
-        <div class="project-links">
-          <a href="https://github.com/" target="_blank">GitHub Repo &rarr;</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Static Portfolio Website</h3>
-        <p>Fast, responsive personal portfolio hosted directly on GitHub Pages.</p>
-        <div class="project-links">
-          <a href="https://github.com/" target="_blank">GitHub Repo &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <h2 class="section-title">Get In Touch</h2>
-    <p>Feel free to reach out for collaborations, freelance work, or technical discussions.</p>
-    <div class="contact-links">
-      <a href="mailto:ayanali@gmail.com" class="btn primary">Email Me</a>
-      <a href="https://github.com/" target="_blank" class="btn secondary">GitHub</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <header class="topbar">
+        <nav aria-label="Main navigation"><a class="logo" href="#home">ayan<span><b>.</b></span></a>
+            <ul class="navlinks" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="status"><i class="dot"></i> OPEN TO OPPORTUNITIES</div><button class="menu" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">DevOps · Cloud · Automation</p>
+                <h1><span class="name-line">AYAN</span><br><span class="glitch" data-text="ALI.">ALI.</span></h1>
+                <p class="subtitle">Making infrastructure feel effortless.</p>
+                <p class="bio">I build resilient cloud systems, automated delivery pipelines, and containerized
+                    applications that are ready for what comes next.</p>
+                <div class="actions"><a class="button primary" href="#projects">Explore my work <span
+                            aria-hidden="true">↗</span></a><a class="button" href="#contact">Let&apos;s talk <span
+                            aria-hidden="true">↗</span></a></div>
+            </div>
+            <div class="hero-art" role="img" aria-label="Abstract glowing cloud infrastructure network">
+                <div class="orbit"><i class="core"></i></div>
+                <div class="art-label"><span>INFRASTRUCTURE / 01</span><span>● SYSTEMS ONLINE</span></div>
+            </div>
+        </section>
+        <section id="about" class="section reveal">
+            <div class="about-layout">
+                <div>
+                    <p class="micro">01 / A LITTLE ABOUT ME</p>
+                    <h2 class="section-title">Built for<br>what&apos;s next.</h2>
+                </div>
+                <p class="about-text">I&apos;m a technologist focused on Linux administration, container orchestration,
+                    and <em>reliable systems at scale.</em> I enjoy automating the repetitive, untangling the complex,
+                    and making the whole stack work better.</p>
+            </div>
+        </section>
+        <section id="skills" class="section reveal">
+            <div class="section-head">
+                <div>
+                    <p class="micro">02 / THE TOOLKIT</p>
+                    <h2 class="section-title">Tools of the trade.</h2>
+                </div><span class="micro">ALWAYS LEARNING ↗</span>
+            </div>
+            <div class="skill-grid">
+                <div class="skill"><span class="num">01</span><strong>Linux<br>&amp; Bash</strong></div>
+                <div class="skill"><span class="num">02</span><strong>Docker<br>&amp; Compose</strong></div>
+                <div class="skill"><span class="num">03</span><strong>Kubernetes</strong></div>
+                <div class="skill"><span class="num">04</span><strong>Git &amp; GitHub<br>Actions</strong></div>
+                <div class="skill"><span class="num">05</span><strong>Networking<br>&amp; Cloud</strong></div>
+            </div>
+        </section>
+        <section id="projects" class="section reveal">
+            <div class="section-head">
+                <div>
+                    <p class="micro">03 / SELECTED WORK</p>
+                    <h2 class="section-title">Things I&apos;ve built.</h2>
+                </div>
+            </div>
+            <div class="projects">
+                <article class="project"><span class="num">PROJECT_001</span>
+                    <div>
+                        <h3>Containerized, end to end.</h3>
+                        <p>A three-tier React, Node.js, and MySQL application deployed with Docker and Kubernetes.</p><a
+                            href="https://github.com/" target="_blank" rel="noreferrer">View project ↗</a>
+                    </div>
+                </article>
+                <article class="project"><span class="num">PROJECT_002</span>
+                    <div>
+                        <h3>Ship it automatically.</h3>
+                        <p>A dependable GitHub Actions pipeline for testing, building, and publishing container images.
+                        </p><a href="https://github.com/" target="_blank" rel="noreferrer">View project ↗</a>
+                    </div>
+                </article>
+                <article class="project"><span class="num">PROJECT_003</span>
+                    <div>
+                        <h3>A home on the web.</h3>
+                        <p>A fast, responsive personal portfolio delivered directly through GitHub Pages.</p><a
+                            href="https://github.com/" target="_blank" rel="noreferrer">View project ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="section reveal">
+            <div class="contactbox">
+                <div>
+                    <p class="micro">04 / YOUR TURN</p>
+                    <h2>Let&apos;s build<br>something solid.</h2>
+                    <p>Open to collaborations, freelance work, or a good infrastructure conversation.</p>
+                </div>
+                <div class="contactlinks"><a href="mailto:theayanaly@gmail.com">theayanaly@gmail.com ↗</a><a
+                        href="https://github.com/theayanaly" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            </div>
+        </section>
+    </main>
+    <footer><span>© <span id="year"></span> AYAN ALI</span><span>DESIGNED FOR RELIABILITY · BUILT WITH INTENTION</span>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear(); const menu = document.getElementById('menuToggle'), links = document.getElementById('navLinks'); menu.addEventListener('click', () => { const open = links.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)) }); links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { links.classList.remove('open'); menu.setAttribute('aria-expanded', 'false') })); const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target) } }), { threshold: .12 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
 </body>
+
 </html>
